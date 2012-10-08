@@ -3,7 +3,7 @@
 Plugin Name: DesignWall shortcodes
 Plugin URI: http://www.desigwall.com
 Description: A simple shortcode generator. Add buttons, columns, tabs, toggles and alerts to your theme.
-Version: 1.0
+Version: 1.0.1
 Author: Designwall
 Author URI: http://www.designwall.com
 */
