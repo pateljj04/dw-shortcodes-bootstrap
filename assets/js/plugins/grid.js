@@ -6,7 +6,7 @@
             switch (n) {                
                 case 'dws_grid':
                 var c = cm.createSplitButton('dws_grid', {
-                    title : 'Based 12 collumns grid system',
+                    title : '12 columns based grid system',
                     image : '../wp-content/plugins/dw-shortcodes-bootstrap/assets/images/grid.png',
                     onclick : function() {
                     }
@@ -14,7 +14,7 @@
 
                 c.onRenderMenu.add(function(c, m) {
 					// Boxes & frames
-					m.add({title : 'Based 12 collumns grid system', 'class' : 'mceMenuItemTitle'}).setDisabled(1);
+					m.add({title : '12 columns based grid system', 'class' : 'mceMenuItemTitle'}).setDisabled(1);
                     m.add({title : '12 Cols', onclick : function() {
                         tinyMCE.activeEditor.execCommand( 'mceInsertContent', false, '[row class="row-fluid"]<br class="nc"/>[col class="span1"]Text[/col]<br class="nc"/>[col class="span1"]Text[/col]<br class="nc"/>[col class="span1"]Text[/col]<br class="nc"/>[col class="span1"]Text[/col]<br class="nc"/>[col class="span1"]Text[/col]<br class="nc"/>[col class="span1"]Text[/col]<br class="nc"/>[col class="span1"]Text[/col]<br class="nc"/>[col class="span1"]Text[/col]<br class="nc"/>[col class="span1"]Text[/col]<br class="nc"/>[col class="span1"]Text[/col]<br class="nc"/>[col class="span1"]Text[/col]<br class="nc"/>[col class="span1"]Text[/col]<br class="nc"/>[/row]' );
                     }});  
@@ -30,6 +30,10 @@
                     m.add({title : 'Fullwith col', onclick : function() {
                         tinyMCE.activeEditor.execCommand( 'mceInsertContent', false, '[row class="row-fluid"]<br class="nc"/>[col class="span12"]Text[/col]<br class="nc"/>[/row]' );
                     }}); 
+                    m.add({title : 'Grid builder', onclick : function() {
+                         tb_show('Grid builder', '../wp-content/plugins/dw-shortcodes-bootstrap/assets/js/plugins/grid.html?TB_iframe=1');
+                    }}); 
+
                 });
 
                 // Return the new splitbutton instance
