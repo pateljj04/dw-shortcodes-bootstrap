@@ -7,7 +7,7 @@
                 case 'dws_collapse':
                 var c = cm.createSplitButton('dws_collapse', {
                     title : 'Collapse',
-                    image : '../wp-content/plugins/dw-shortcodes/assets/images/collapse.png',
+                    image : '../wp-content/plugins/dw-shortcodes-bootstrap/assets/images/collapse.png',
                     onclick : function() {
 
                     }

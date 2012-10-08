@@ -7,7 +7,7 @@
                 case 'dws_alerts':
                 var c = cm.createSplitButton('dws_alerts', {
                     title : 'Notification',
-                    image : '../wp-content/plugins/dw-shortcodes/assets/images/alert.png',
+                    image : '../wp-content/plugins/dw-shortcodes-bootstrap/assets/images/alert.png',
                     onclick : function() {
                     }
                 });

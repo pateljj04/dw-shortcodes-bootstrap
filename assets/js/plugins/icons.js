@@ -7,9 +7,9 @@
                 case 'dws_icons':
                 var c = cm.createButton('dws_icons', {
                     title : 'Tabs shortcodes',
-                    image : '../wp-content/plugins/dw-shortcodes/assets/images/icons.png',
+                    image : '../wp-content/plugins/dw-shortcodes-bootstrap/assets/images/icons.png',
                     onclick : function() {
-                        tb_show('Select icons', '../wp-content/plugins/dw-shortcodes/assets/js/plugins/icons.html?TB_iframe=1');
+                        tb_show('Select icons', '../wp-content/plugins/dw-shortcodes-bootstrap/assets/js/plugins/icons.html?TB_iframe=1');
                     }
                 });
 

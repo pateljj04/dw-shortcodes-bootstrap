@@ -7,9 +7,9 @@
                 case 'dws_tabs':
                 var c = cm.createButton('dws_tabs', {
                     title : 'Tabs shortcodes',
-                    image : '../wp-content/plugins/dw-shortcodes/assets/images/tabs.png',
+                    image : '../wp-content/plugins/dw-shortcodes-bootstrap/assets/images/tabs.png',
                     onclick : function() {
-                        tb_show('Tab builder', '../wp-content/plugins/dw-shortcodes/assets/js/plugins/tabs.html?TB_iframe=1');
+                        tb_show('Tab builder', '../wp-content/plugins/dw-shortcodes-bootstrap/assets/js/plugins/tabs.html?TB_iframe=1');
                     }
                 });
 

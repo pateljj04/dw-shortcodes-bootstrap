@@ -7,7 +7,7 @@
                 case 'dws_grid':
                 var c = cm.createSplitButton('dws_grid', {
                     title : 'Based 12 collumns grid system',
-                    image : '../wp-content/plugins/dw-shortcodes/assets/images/grid.png',
+                    image : '../wp-content/plugins/dw-shortcodes-bootstrap/assets/images/grid.png',
                     onclick : function() {
                     }
                 });

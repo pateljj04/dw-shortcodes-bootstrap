@@ -7,7 +7,7 @@
                 case 'dws_buttons':
                 var c = cm.createSplitButton('dws_buttons', {
                     title : 'Buttons',
-                    image : '../wp-content/plugins/dw-shortcodes/assets/images/labels.png',
+                    image : '../wp-content/plugins/dw-shortcodes-bootstrap/assets/images/labels.png',
                     onclick : function() {
 
                     }
