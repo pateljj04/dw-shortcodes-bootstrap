@@ -32,11 +32,12 @@ http://designwall.com
 
 == Change log ==
 
-= 1.0 =
-* First version out.
 = 1.0.1 =
 * Add new feature Grid builder
 * Fix wrong url for icons & tab buider.
+= 1.0 =
+* First version out.
+
 
 == Frequently Asked Questions ==
 * No FAQ yet
