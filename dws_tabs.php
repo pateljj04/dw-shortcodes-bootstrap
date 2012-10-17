@@ -8,7 +8,7 @@
 /**
  * Tabs
  */
-//--------------
+//-------------- 
 //	[tabs]
 //		[thead]
 //			[tab href="#link" title="title"]

@@ -22,27 +22,32 @@
                         var $menu = jQuery('#menu_'+c.id+'_co').find('tbody:first');
                         if($menu.data('added')) return;
                         $menu.append('');
-                        $menu.append('<div style="padding:0 10px"><strong>Size:</strong><br/><input type="radio" name="size" value="Mini"> Mini\
-                        <input type="radio" name="size" value="Small"> Small\
-                        <input type="radio" name="size" value="Normal" checked> Normal\
-                        <input type="radio" name="size" value="Large"> Large<br/>\
+                        $menu.append('<div style="padding:0 10px"><strong>Size:</strong><br/>\
+                        <select name="size">\
+                        <option value="Mini">Mini</option>\
+                        <option value="Small">Small</option>\
+                        <option value="Normal" selected>Normal</option>\
+                        <option value="Large">Large</option>\
+                        </select>\
                         <br/><strong>Types:</strong><br/>\
-                        <input type="radio" name="type" value="Default"> Default\
-                        <input type="radio" name="type" value="Primary"> Primary\
-                        <input type="radio" name="type" value="Info" checked> Info\
-                        <input type="radio" name="type" value="Success"> Success<br><br>\
-                        <input type="radio" name="type" value="Warning"> Warning\
-                        <input type="radio" name="type" value="Danger"> Danger\
-                        <input type="radio" name="type" value="Inverse"> Inverse\
-                        <input type="radio" name="type" value="Link"> Link<br/>\
+                        <select name="type">\
+                        <option value="Default"> Default</option>\
+                        <option value="Primary"> Primary</option>\
+                        <option value="Info" selected> Info</option>\
+                        <option value="Success"> Success</option>\
+                        <option value="Warning"> Warning</option>\
+                        <option value="Danger"> Danger</option>\
+                        <option value="Inverse"> Inverse</option>\
+                        <option value="Link"> Link</option>\
+                        </select>\
                         <br/><strong>Link:</strong>\
                         <input type="text" name="link" value="#" onclick="this.select()"  /><br/>\
                         </div>');
 
                         jQuery('<input type="button" value="Insert" />').appendTo($menu)
                                 .click(function(){
-                                    var size = $menu.find('input:radio[name=size]:checked').val();
-                                    var type = $menu.find('input:radio[name=type]:checked').val();
+                                    var size = $menu.find('select[name=size]').val();
+                                    var type = $menu.find('select[name=type]').val();
                                     var link = $menu.find('input[name=link]').val();
                                     tinymce.activeEditor.execCommand('mceInsertContent',false,'[button size="'+size.toLowerCase()+'" type="'+type.toLowerCase()+'" value="'+type+'" href="'+link+'"]');
                                     c.hideMenu();
