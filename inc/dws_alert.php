@@ -14,7 +14,7 @@ function dws_notice($params, $content = null){
 	), $params));
 	$content = preg_replace('/<br class="nc".\/>/', '', $content);
 	$result = '<div class="alert alert-'.$type.'">';
-	$result .= '<button class="close" type="button" data-dismiss="alert">x</button>';
+	$result .= '<button class="close" type="button" data-dismiss="alert">×</button>';
 	$result .= do_shortcode($content );
 	$result .= '</div>'; 
 	return force_balance_tags( $result );

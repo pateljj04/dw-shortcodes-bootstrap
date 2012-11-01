@@ -7,7 +7,6 @@
                 case 'dws_collapse':
                 var c = cm.createSplitButton('dws_collapse', {
                     title : 'Collapse',
-                    image : '../wp-content/plugins/dw-shortcodes-bootstrap/assets/images/collapse.png',
                     onclick : function() {
 
                     }
@@ -22,12 +21,12 @@
                         var $menu = jQuery('#menu_'+c.id+'_co').find('tbody:first');
                         if($menu.data('added')) return;
                         $menu.append('');
-                        $menu.append('<div style="padding:0 10px">\
-                        <br/><strong>Number of items: </strong>\
-                        <input type="text" name="itemnum" value="3" onclick="this.select()"  /><br/>\
+                        $menu.append('<div style="padding:0 10px 10px">\
+                        <label>Number of items<br />\
+                        <input type="text" name="itemnum" value="3" onclick="this.select()"  /></label>\
                         </div>');
 
-                        jQuery('<input type="button" value="Insert" />').appendTo($menu)
+                        jQuery('<input type="button" class="button" value="Insert" />').appendTo($menu)
                                 .click(function(){
                          /**
                           * Shortcode markup
@@ -53,14 +52,14 @@
 
                                     tinymce.activeEditor.execCommand('mceInsertContent',false,shortcode);
                                     c.hideMenu();
-                                }).wrap('<div style="padding:10px"></div>')
+                                }).wrap('<div style="padding: 0 10px 10px"></div>')
                  
                         $menu.data('added',true); 
 
                     });
 
                    // XSmall
-					m.add({title : 'Create new collapse:', 'class' : 'mceMenuItemTitle'}).setDisabled(1);
+					m.add({title : 'Collapse', 'class' : 'mceMenuItemTitle'}).setDisabled(1);
 
                  });
                 // Return the new splitbutton instance

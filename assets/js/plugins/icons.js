@@ -6,8 +6,7 @@
             switch (n) {                
                 case 'dws_icons':
                 var c = cm.createButton('dws_icons', {
-                    title : 'Tabs shortcodes',
-                    image : '../wp-content/plugins/dw-shortcodes-bootstrap/assets/images/icons.png',
+                    title : 'Icons',
                     onclick : function() {
                         tb_show('Select icons', '../wp-content/plugins/dw-shortcodes-bootstrap/assets/js/plugins/icons.html?TB_iframe=1');
                     }
