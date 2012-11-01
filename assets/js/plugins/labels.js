@@ -7,7 +7,6 @@
                 case 'dws_labels':
                 var c = cm.createSplitButton('dws_labels', {
                     title : 'Boxes & frames shortcodes',
-                    image : '../wp-content/plugins/dw-shortcodes-bootstrap/assets/images/labels.png',
                     onclick : function() {
                     }
                 });

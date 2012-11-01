@@ -7,7 +7,6 @@
                 case 'dws_buttons':
                 var c = cm.createSplitButton('dws_buttons', {
                     title : 'Buttons',
-                    image : '../wp-content/plugins/dw-shortcodes-bootstrap/assets/images/labels.png',
                     onclick : function() {
 
                     }
@@ -22,14 +21,14 @@
                         var $menu = jQuery('#menu_'+c.id+'_co').find('tbody:first');
                         if($menu.data('added')) return;
                         $menu.append('');
-                        $menu.append('<div style="padding:0 10px"><strong>Size:</strong><br/>\
+                        $menu.append('<div style="padding: 0 10px 10px"><label>Size<br/>\
                         <select name="size">\
                         <option value="Mini">Mini</option>\
                         <option value="Small">Small</option>\
                         <option value="Normal" selected>Normal</option>\
                         <option value="Large">Large</option>\
-                        </select>\
-                        <br/><strong>Types:</strong><br/>\
+                        </select></label>\
+                        <label>Types<br/>\
                         <select name="type">\
                         <option value="Default"> Default</option>\
                         <option value="Primary"> Primary</option>\
@@ -40,25 +39,25 @@
                         <option value="Inverse"> Inverse</option>\
                         <option value="Link"> Link</option>\
                         </select>\
-                        <br/><strong>Link:</strong>\
-                        <input type="text" name="link" value="#" onclick="this.select()"  /><br/>\
+                        <label>Link<br />\
+                        <input type="text" name="link" value="#" onclick="this.select()"  /></label>\
                         </div>');
 
-                        jQuery('<input type="button" value="Insert" />').appendTo($menu)
+                        jQuery('<input type="button" class="button" value="Insert" />').appendTo($menu)
                                 .click(function(){
                                     var size = $menu.find('select[name=size]').val();
                                     var type = $menu.find('select[name=type]').val();
                                     var link = $menu.find('input[name=link]').val();
                                     tinymce.activeEditor.execCommand('mceInsertContent',false,'[button size="'+size.toLowerCase()+'" type="'+type.toLowerCase()+'" value="'+type+'" href="'+link+'"]');
                                     c.hideMenu();
-                                }).wrap('<div style="padding:10px"></div>')
+                                }).wrap('<div style="padding: 0 10px 10px"></div>')
                  
                         $menu.data('added',true); 
 
                     });
 
                    // XSmall
-					m.add({title : 'Select button type:', 'class' : 'mceMenuItemTitle'}).setDisabled(1);
+                    m.add({title : 'Buttons', 'class' : 'mceMenuItemTitle'}).setDisabled(1);
 
                  });
                 // Return the new splitbutton instance

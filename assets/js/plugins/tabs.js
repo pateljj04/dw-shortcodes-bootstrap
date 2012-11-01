@@ -6,8 +6,7 @@
             switch (n) {                
                 case 'dws_tabs':
                 var c = cm.createButton('dws_tabs', {
-                    title : 'Tabs shortcodes',
-                    image : '../wp-content/plugins/dw-shortcodes-bootstrap/assets/images/tabs.png',
+                    title : 'Tabs',
                     onclick : function() {
                         tb_show('Tab builder', '../wp-content/plugins/dw-shortcodes-bootstrap/assets/js/plugins/tabs.html?TB_iframe=1');
                     }

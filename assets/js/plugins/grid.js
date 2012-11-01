@@ -6,32 +6,28 @@
             switch (n) {                
                 case 'dws_grid':
                 var c = cm.createSplitButton('dws_grid', {
-                    title : '12 columns based grid system',
-                    image : '../wp-content/plugins/dw-shortcodes-bootstrap/assets/images/grid.png',
+                    title : 'Fluid grid system',
                     onclick : function() {
                     }
                 });
 
                 c.onRenderMenu.add(function(c, m) {
 					// Boxes & frames
-					m.add({title : '12 columns based grid system', 'class' : 'mceMenuItemTitle'}).setDisabled(1);
-                    m.add({title : '12 Cols', onclick : function() {
+					m.add({title : 'Fluid grid system', 'class' : 'mceMenuItemTitle'}).setDisabled(1);
+                    m.add({title : '12 Columns', onclick : function() {
                         tinyMCE.activeEditor.execCommand( 'mceInsertContent', false, '[row class="row-fluid"]<br class="nc"/>[col class="span1"]Text[/col]<br class="nc"/>[col class="span1"]Text[/col]<br class="nc"/>[col class="span1"]Text[/col]<br class="nc"/>[col class="span1"]Text[/col]<br class="nc"/>[col class="span1"]Text[/col]<br class="nc"/>[col class="span1"]Text[/col]<br class="nc"/>[col class="span1"]Text[/col]<br class="nc"/>[col class="span1"]Text[/col]<br class="nc"/>[col class="span1"]Text[/col]<br class="nc"/>[col class="span1"]Text[/col]<br class="nc"/>[col class="span1"]Text[/col]<br class="nc"/>[col class="span1"]Text[/col]<br class="nc"/>[/row]' );
-                    }});  
-                    m.add({title : '4 Cols', onclick : function() {
+                    }});
+                    m.add({title : '4 Columns', onclick : function() {
                         tinyMCE.activeEditor.execCommand( 'mceInsertContent', false, '[row class="row-fluid"]<br class="nc"/>[col class="span4"]Text[/col]<br class="nc"/>[col class="span4"]Text[/col]<br class="nc"/>[col class="span4"]Text[/col]<br class="nc"/>[/row]' );
-                    }});  
-                    m.add({title : '4 Cols - 8 Cols', onclick : function() {
-                        tinyMCE.activeEditor.execCommand( 'mceInsertContent', false, '[row class="row-fluid"]<br class="nc"/>[col class="span4"]Text[/col]<br class="nc"/>[col class="span8"]Text[/col]<br class="nc"/>[/row]' );
-                    }}); 
-                    m.add({title : '6 Cols - 6 Cols', onclick : function() {
+                    }});
+                    m.add({title : '2 Columns', onclick : function() {
                         tinyMCE.activeEditor.execCommand( 'mceInsertContent', false, '[row class="row-fluid"]<br class="nc"/>[col class="span6"]Text[/col]<br class="nc"/>[col class="span6"]Text[/col]<br class="nc"/>[/row]' );
                     }}); 
-                    m.add({title : 'Fullwith col', onclick : function() {
+                    m.add({title : '1 Columns', onclick : function() {
                         tinyMCE.activeEditor.execCommand( 'mceInsertContent', false, '[row class="row-fluid"]<br class="nc"/>[col class="span12"]Text[/col]<br class="nc"/>[/row]' );
                     }}); 
-                    m.add({title : 'Grid builder', onclick : function() {
-                         tb_show('Grid builder', '../wp-content/plugins/dw-shortcodes-bootstrap/assets/js/plugins/grid.html?TB_iframe=1');
+                    m.add({title : 'Custom Grid', onclick : function() {
+                         tb_show('Custom Grid', '../wp-content/plugins/dw-shortcodes-bootstrap/assets/js/plugins/grid.html?TB_iframe=1');
                     }}); 
 
                 });
