@@ -4,7 +4,7 @@ Donate link: http://designwall.com
 Tags: shortcode, shortcodes, bootstrap, buttons, grid, responsive, widget
 Requires at least: 3.0
 Tested up to: 3.4.2
-Stable tag: 2.0
+Stable tag: 2.1
 License: GNU General Public License v2.0
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -31,7 +31,8 @@ http://designwall.com
 5. Have fun!
 
 == Change log ==
-
+= 2.0.1 =
+* Remove bugs warning
 = 2.0 =
 * Improve tabs buider.
 * Add plugin options page.

@@ -3,7 +3,7 @@
 Plugin Name: DW Shortcode Bootstrap
 Plugin URI: http://www.designwall.com
 Description: A simple shortcode generator. Add buttons, columns, tabs, toggles and alerts to your theme.
-Version: 2.0
+Version: 2.0.1
 Author: DesignWall 
 Author URI: http://www.designwall.com
 */
@@ -33,7 +33,7 @@ class DesignwallShortcodes{
 			 	wp_enqueue_style("dws_bootstrap", plugins_url('assets/css/bootstrap.css', __FILE__ ));
 				wp_enqueue_style("dws_shortcodes", plugins_url('assets/css/shortcodes.css', __FILE__ ));
 			}
-			if($options['chk_default_options_js'])
+			if( isset($options['chk_default_options_js']) && $options['chk_default_options_js'] )
 				wp_enqueue_script('dws_bootstrap', plugins_url('assets/js/bootstrap.js', __FILE__ ),array('jquery'));
 		} else {
 			wp_enqueue_style("dws_admin_style", plugins_url('assets/css/admin.css', __FILE__ ));
