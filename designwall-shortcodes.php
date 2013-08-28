@@ -29,7 +29,7 @@ class DesignwallShortcodes{
 	function init(){
 		$options = get_option('dwsc_options');
 		if(!is_admin()){
-			if($options['chk_default_options_css']){
+			if( isset($options['chk_default_options_css']) && $options['chk_default_options_css'] ){
 			 	wp_enqueue_style("dws_bootstrap", plugins_url('assets/css/bootstrap.css', __FILE__ ));
 				wp_enqueue_style("dws_shortcodes", plugins_url('assets/css/shortcodes.css', __FILE__ ));
 			}
